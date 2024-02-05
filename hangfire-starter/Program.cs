@@ -3,16 +3,23 @@ using Hangfire.Storage.SQLite;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddRazorPages();
 
-//Hangfire Service
-GlobalConfiguration.Configuration.UseSQLiteStorage();
-builder.Services.AddHangfire(configuration => configuration
-            .UseSimpleAssemblyNameTypeSerializer()
-            .UseRecommendedSerializerSettings()
-            .UseSQLiteStorage());
+// --------------------------------
+// Hangfire 
+// --------------------------------
 
+// use SQLite
+GlobalConfiguration.Configuration.UseSQLiteStorage();
+builder.Services.AddHangfire(configuration => configuration.UseSQLiteStorage());
+
+// add jobs
+RecurringJob.AddOrUpdate<DummyHandler>("what time is it ?", (h) => h.EchoCurrentTime(), Cron.Minutely);
+RecurringJob.AddOrUpdate<DummyHandler>("throw some error", (h) => h.ThrowException(), Cron.Minutely);
+for (int i = 0; i < 5; i++)
+{
+    RecurringJob.AddOrUpdate<DummyHandler>("get html content - "+i, (h) => h.GetHtmlConetent(), Cron.MinuteInterval(2));
+}
 
 var app = builder.Build();
 
@@ -24,6 +31,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -33,7 +41,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-
+// Hangfire UI and Server
 app.UseHangfireDashboard();
 app.UseHangfireServer();
 

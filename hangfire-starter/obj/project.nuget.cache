@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "illTWa7IHWxhe7ZunI4MpmmJM48b7Bl2RkzSz1+8BIFaNCEyz1LvE+nsdWiWBZQ4H/7sKy6AE3n61gB/LdoJKw==",
+  "dgSpecHash": "Ui+EqFvUZcu8yQQNLwEzeNOrAjnLdyrBqAzKhN8ju1Y2XEmHIlUo1CaI1WEyM9emqHiIyRybD9u4UEXGclD0tA==",
   "success": true,
-  "projectFilePath": "c:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj",
+  "projectFilePath": "C:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alex_ho\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\alex_ho\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

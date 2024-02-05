@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj": {}
+    "C:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj": {}
   },
   "projects": {
-    "c:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj": {
+    "C:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj",
+        "projectUniqueName": "C:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj",
         "projectName": "hangfire-starter",
-        "projectPath": "c:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj",
+        "projectPath": "C:\\workspace\\hangfire-starter\\hangfire-starter\\hangfire-starter.csproj",
         "packagesPath": "C:\\Users\\alex_ho\\.nuget\\packages\\",
-        "outputPath": "c:\\workspace\\hangfire-starter\\hangfire-starter\\obj\\",
+        "outputPath": "C:\\workspace\\hangfire-starter\\hangfire-starter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alex_ho\\AppData\\Roaming\\NuGet\\NuGet.Config",
